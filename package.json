@@ -1,5 +1,5 @@
 {
-  "name": "jadoo",
+  "name": "grexi-landing",
   "private": true,
   "scripts": {
     "build": "nuxt build",
@@ -26,25 +26,25 @@
   "overrides": {
     "vue": "latest"
   },
-  "description": "Jadoo is a travel agency landing page built with Nuxt 3",
+  "description": "A landing page built with Nuxt 3 for Grexi Albornett to showcase her courses",
   "version": "1.0.0",
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/DevHumbleChris/jadoo.git"
+    "url": "git+https://github.com/saert3311/landing-grexi"
   },
   "keywords": [
     "travel",
-    "travel agency",
+    "grexi",
     "landing page",
     "nuxt3",
     "tailwindcss",
     "pinia"
   ],
-  "author": "AmChrisKE",
+  "author": "saert3311",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/DevHumbleChris/jadoo/issues"
+    "url": "https://github.com/saert3311/landing-grexi/issues"
   },
-  "homepage": "https://github.com/DevHumbleChris/jadoo#readme"
+  "homepage": "https://github.com/saert3311/landing-grexi#readme"
 }
