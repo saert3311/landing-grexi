@@ -2,18 +2,15 @@
 import Footer from '~/components/global/Footer.vue';
 useHead({
   htmlAttrs: {
-    lang: 'en',
+    lang: 'es',
   },
   meta: [
-    { property: 'og:title', content: `Jadoo` },
-    { name: 'description', content: 'Jadoo is a travel agency landing page built with Nuxt 3 and TailwindCSS.' },
-    { property: 'og:description', content: 'Jadoo is a travel agency landing page built with Nuxt 3 and TailwindCSS.' },
-    { property: 'og:url', content: 'https://jadoo-ke.vercel.app/' },
-    { name: 'twitter:title', content: 'Jadoo' },
-    { name: 'twitter:description', content: 'Jadoo is a travel agency landing page built with Nuxt 3 and TailwindCSS.' },
-    { name: 'twitter:site', content: 'https://jadoo-ke.vercel.app/' }
+    { property: 'og:title', content: `Transforma tu mente al exito financiero` },
+    { name: 'description', content: 'Comprender de donde vienen los bloqueos y todo aquello que condiciona tu mente para no generar ingresos ni ser éxitoso' },
+    { property: 'og:description', content: 'reprogramación de la mente inconsciente para eliminar las barreras de poder adquirir grandes cantidades de dinero' },
+    { property: 'og:url', content: '' },
   ],
-  title: `Jadoo`,
+  title: `Transforma tu mente al exito financiero - Grexi Albornett`,
 })
 </script>
 

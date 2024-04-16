@@ -3,7 +3,6 @@ import SatelightSVG from "~/components/global/svg/SatelightSVG.vue";
 import AeroplaneSVG from "~/components/global/svg/AeroplaneSVG.vue";
 import MicrophoneSVG from "~/components/global/svg/MicrophoneSVG.vue";
 import CogSVG from "~/components/global/svg/CogSVG.vue";
-import PlusPlusSVG from "~/components/global/svg/PlusPlusSVG.vue";
 </script>
 
 <template>
@@ -11,7 +10,6 @@ import PlusPlusSVG from "~/components/global/svg/PlusPlusSVG.vue";
     <div class="text-center space-y-3 relative">
       <p class="uppercase font-semibold text-gray-600">Category</p>
       <h2 class="text-[#14183E] font-bold text-4xl sm:text-5xl font-volkhov">We Offer Best Services</h2>
-      <PlusPlusSVG />
     </div>
     <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 p-8 sm:p-0 gap-8 sm:gap-16 items-center my-4 sm:my-12 text-center">
       <div class="relative group">
