@@ -2,7 +2,7 @@
 import Hero from '~/components/hero/index.vue'
 import Category from '~/components/category/index.vue'
 import About from '~/components/about/index.vue'
-import Bookings from '~/components/bookings/index.vue'
+import Details from '~/components/details/index.vue'
 import Testimonials from '~/components/testimonials/index.vue'
 import Companies from '~/components/companies/index.vue'
 import Subscribe from '~/components/subscribe/index.vue'
@@ -12,7 +12,7 @@ import Subscribe from '~/components/subscribe/index.vue'
     <LazyHero />
     <LazyCategory />
     <LazyAbout />
-    <LazyBookings />
+    <LazyDetails />
     <LazyTestimonials />
     <LazyCompanies />
     <LazySubscribe />
