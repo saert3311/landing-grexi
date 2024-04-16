@@ -64,17 +64,17 @@ const mobileMenuOpen = ref(false);
           <div class="-my-6 divide-y divide-gray-500/10">
             <div class="space-y-2 py-6">
               <NuxtLink
-                to="#"
+                to="https://grexialbornett.com" target="_blank" rel="noopener"
                 class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                 >Inicio</NuxtLink
               >
               <NuxtLink
-                to="#"
+                to="https://grexialbornett.com/nuestro-blog" target="_blank" rel="noopener"
                 class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                 >Blog</NuxtLink
               >
               <NuxtLink
-                to="#"
+                to="https://grexialbornett.com/nuestra-tienda" target="_blank" rel="noopener"
                 class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                 >Tienda</NuxtLink
               >
