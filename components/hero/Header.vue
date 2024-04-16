@@ -16,9 +16,9 @@ const mobileMenuOpen = ref(false);
     />
     <div class="hidden lg:flex items-center space-x-20">
       <ul class="flex items-center space-x-12">
-        <li><NuxtLink to="#">Inicio</NuxtLink></li>
-        <li><NuxtLink to="#">Blog</NuxtLink></li>
-        <li><NuxtLink to="#">Tienda</NuxtLink></li>
+        <li><NuxtLink to="https://grexialbornett.com" target="_blank" rel="noopener">Inicio</NuxtLink></li>
+        <li><NuxtLink to="https://grexialbornett.com/nuestro-blog" target="_blank" rel="noopener">Blog</NuxtLink></li>
+        <li><NuxtLink to="https://grexialbornett.com/nuestra-tienda" target="_blank" rel="noopener">Tienda</NuxtLink></li>
       </ul>
       <ul class="flex items-center space-x-8">
         <li>
