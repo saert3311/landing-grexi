@@ -10,13 +10,13 @@
 
             <div class="relative pl-20 pr-6 sm:pl-6 md:px-0">
                 <div class="relative w-full max-w-xs mt-4 mb-10 ml-auto">
-                    <NuxtImg class="ml-auto" src="https://grexialbornett.com/wp-content/uploads/2023/09/grexi_254.webp" alt="Grexi Albornett" />
+                    <NuxtImg class="ml-auto" src="/images/grexi_description.webp" alt="Grexi Albornett" />
 
                     <img class="absolute -top-4 -left-12" src="https://cdn.rareblocks.xyz/collection/celebration/images/features/1/wavey-lines.svg" alt="" />
 
                     <div class="absolute -bottom-10 -left-16">
                         <div class="bg-yellow-300">
-                            <div class="px-8 py-10 bg-primary">
+                            <div class="px-8 py-10 bg-gold">
                                 <span class="block text-4xl font-bold text-white lg:text-5xl"> 2 - 3 </span>
                                 <span class="block mt-2 text-base leading-tight text-white"> Horas de<br />Contenido </span>
                             </div>
