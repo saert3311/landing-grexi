@@ -36,10 +36,9 @@ import BrushSVG from "../global/svg/BrushSVG.vue";
         </div>
       </div>
       <div class="mt-5 md:mt-0 flex justify-center">
-        <nuxt-picture
+        <img
           src="/images/exito_grexi.webp"
           alt="Success Image"
-          sizes="sm:100vw md:50vw lg:500px"
         />
         <BrushSVG />
       </div>

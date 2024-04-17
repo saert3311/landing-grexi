@@ -10,7 +10,7 @@
 
             <div class="relative pl-20 pr-6 sm:pl-6 md:px-0">
                 <div class="relative w-full max-w-xs mt-4 mb-10 ml-auto">
-                    <NuxtImg class="ml-auto" src="/images/grexi_description.webp" alt="Grexi Albornett" />
+                    <img class="ml-auto" src="/images/grexi_description.webp" alt="Grexi Albornett" />
 
                     <img class="absolute -top-4 -left-12" src="https://cdn.rareblocks.xyz/collection/celebration/images/features/1/wavey-lines.svg" alt="" />
 
