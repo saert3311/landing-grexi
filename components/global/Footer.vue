@@ -5,11 +5,10 @@
     >
       <div class="col-span-2 space-y-3">
         <NuxtLink to="/" class="text-[#181E4B] font-medium text-5xl"
-          >Jadoo.</NuxtLink
+          >    <NuxtImg src="https://grexialbornett.com/wp-content/uploads/2023/06/Grexi-Albornett-Logo.svg" 
+    width="350px" alt="Grexi Albornett Logo"
+    /></NuxtLink
         >
-        <p class="text-[#080809] text-xs font-light">
-          Book your trip in minute, get full Control for much longer.
-        </p>
       </div>
       <div class="col-span-6 grid grid-cols-1 sm:grid-cols-6">
         <div class="col-span-2 space-y-4">
@@ -186,12 +185,13 @@
       </div>
     </div>
     <p class="text-center text-xs text-[#5E6282] mb-8 sm:mt-8">
-      Made with 🥰🤗,
+      Hecho con amor 🥰🤗,
       <NuxtLink
-        to="https://the-coding-montana.vercel.app"
+        to="https://grexialbornett.com"
         class="text-indigo-600"
-        >The Coding Montana</NuxtLink
+        >Grexi Albornett</NuxtLink
       >
+      {{ new Date().getFullYear() }}
     </p>
   </footer>
 </template>
