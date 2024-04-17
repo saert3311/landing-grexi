@@ -11,7 +11,7 @@ const mobileMenuOpen = ref(false);
   <div
     class="pt-5 pb-2 sm:px-16 sm:py-6 px-5 md:px-none flex items-center w-full justify-between font-poppins"
   >
-    <NuxtImg src="https://grexialbornett.com/wp-content/uploads/2023/06/Grexi-Albornett-Logo.svg" 
+    <img src="https://grexialbornett.com/wp-content/uploads/2023/06/Grexi-Albornett-Logo.svg" 
     width="150px" alt="Grexi Albornett Logo"
     />
     <div class="hidden lg:flex items-center space-x-20">
@@ -44,7 +44,7 @@ const mobileMenuOpen = ref(false);
       >
         <div class="flex items-center justify-between">
           <a href="#" class="-m-1.5 p-1.5">
-            <NuxtImg
+            <img
               src="https://grexialbornett.com/wp-content/uploads/2023/06/Grexi-Albornett-Logo.svg"
               width="150px"
               alt="Grexi Albornett Logo"

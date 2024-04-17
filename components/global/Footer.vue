@@ -5,7 +5,7 @@
     >
       <div class="col-start-2 col-span-2 space-y-3">
         <NuxtLink to="/">
-          <NuxtImg
+          <img
             src="https://grexialbornett.com/wp-content/uploads/2023/06/Grexi-Albornett-Logo.svg"
             alt="Grexi Albornett Logo"
             class="mx-auto"
