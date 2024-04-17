@@ -7,6 +7,7 @@ export default defineNuxtConfig({
     "@nuxtjs/tailwindcss",
     "nuxt-headlessui",
   ],
+  image: {},
   tailwindcss: {
     cssPath: "~/assets/css/tailwind.css",
     config: {
@@ -22,5 +23,4 @@ export default defineNuxtConfig({
     }
   },
   ssr: true,
-  image: {}
 });
