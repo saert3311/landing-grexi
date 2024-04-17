@@ -36,7 +36,7 @@
           </div>
           <div class="w-full px-4 lg:w-1/2 xl:w-5/12">
             <div class="mt-10 lg:mt-0">
-              <span class="block mb-4 text-lg font-semibold text-primary"> Independientemente de su género, edad o profesión. </span>
+              <span class="block mb-4 text-lg font-semibold text-gold"> Independientemente de su género, edad o profesión. </span>
               <h2 class="mb-5 text-3xl font-bold text-text sm:text-[40px]/[48px]">
                 A quienes esta dirigido
               </h2>
@@ -45,7 +45,7 @@
               </p>
               <a
                 href="javascript:void(0)"
-                class="inline-flex items-center justify-center py-3 text-base font-medium text-center text-white border border-transparent rounded-md px-7 bg-primary hover:bg-opacity-90"
+                class="inline-flex items-center justify-center py-3 text-base font-medium text-center text-white border border-transparent rounded-md px-7 bg-gold hover:bg-opacity-90"
               >
                 Iniciar
               </a>

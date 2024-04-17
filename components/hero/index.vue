@@ -9,7 +9,7 @@ import BrushSVG from "../global/svg/BrushSVG.vue";
     <Header />
     <section class="w-full grid grid-cols-1 md:grid-cols-2 items-center p-5 sm:p-20 my-2">
       <div class="space-y-3">
-        <p class="uppercase font-poppins text-sm text-[#DF6951] font-bold">
+        <p class="uppercase font-poppins text-sm text-gold font-bold">
           EN SOLO 2 - 3 HORAS
         </p>
         <div
@@ -29,19 +29,17 @@ import BrushSVG from "../global/svg/BrushSVG.vue";
         </p>
         <div class="flex items-center space-x-3">
           <button type="button" aria-label="Find out more"
-            class="block bg-[#F1A501] text-white p-3 text-sm font-poppins rounded-md"
+            class="block bg-gold text-white p-3 text-sm font-poppins rounded-md"
           >
             Inicia tu transformación
           </button>
         </div>
       </div>
-      <div class="mt-5 md:mt-0">
+      <div class="mt-5 md:mt-0 flex justify-center">
         <nuxt-picture
-          src="/images/main_success.webp"
-          width="765"
-          height="764"
+          src="/images/exito_grexi.webp"
           alt="Success Image"
-          sizes="sm:100vw md:50vw lg:400px"
+          sizes="sm:100vw md:50vw lg:500px"
         />
         <BrushSVG />
       </div>

@@ -8,6 +8,7 @@ module.exports = {
       text: '#231F20',
       emphasis: '#C3A095',
       white: '#FFFFFF',
+      gold: '#cf9d5e'
     },
     extend: {},
   },

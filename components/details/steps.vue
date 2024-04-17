@@ -24,7 +24,7 @@
             </svg>
           </div>
         </div>
-        <div class="h-full w-px bg-secondary"></div>
+        <div class="h-full w-px bg-secondary" :class="{hidden: props.last}"></div>
       </div>
       <div class="pt-1 pb-8">
         <p class="mb-2 text-xl font-bold text-text">
@@ -37,5 +37,9 @@
 <script setup>
 const props = defineProps({
   text: String,
+  last: {
+    type: Boolean,
+    default: false
+  }
 });
 </script>

@@ -13,7 +13,5 @@ import Subscribe from '~/components/subscribe/index.vue'
     <LazyCategory />
     <LazyAbout />
     <LazyDetails />
-    <LazyTestimonials />
-    <LazyCompanies />
     <LazySubscribe />
 </template>
