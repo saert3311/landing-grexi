@@ -9,7 +9,6 @@
       <h2 class="text-[#14183E] font-bold text-4xl sm:text-5xl font-volkhov">
         Top Destinations
       </h2>
-      <PlusPlusSVG />
     </div>
     <div
       class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-12 md:gap-24 my-12 px-4 sm:p-0"

@@ -1,36 +1,30 @@
 <script setup>
-import Logo from "../global/Logo.vue";
 import { ref } from "vue";
 import { Dialog, DialogPanel } from "@headlessui/vue";
 import { XMarkIcon } from "@heroicons/vue/24/outline";
 
 const mobileMenuOpen = ref(false);
+
 </script>
 
 <template>
   <div
-    class="p-5 sm:px-16 sm:py-6 flex items-center w-full justify-between font-poppins"
+    class="pt-5 pb-2 sm:px-16 sm:py-6 px-5 md:px-none flex items-center w-full justify-between font-poppins"
   >
-    <Logo />
+    <NuxtImg src="https://grexialbornett.com/wp-content/uploads/2023/06/Grexi-Albornett-Logo.svg" 
+    width="150px" alt="Grexi Albornett Logo"
+    />
     <div class="hidden lg:flex items-center space-x-20">
       <ul class="flex items-center space-x-12">
-        <li><NuxtLink to="#">Destinations</NuxtLink></li>
-        <li><NuxtLink to="#">Hotels</NuxtLink></li>
-        <li><NuxtLink to="#">Flights</NuxtLink></li>
-        <li><NuxtLink to="#">Bookings</NuxtLink></li>
+        <li><NuxtLink to="https://grexialbornett.com" target="_blank" rel="noopener">Inicio</NuxtLink></li>
+        <li><NuxtLink to="https://grexialbornett.com/nuestro-blog" target="_blank" rel="noopener">Blog</NuxtLink></li>
+        <li><NuxtLink to="https://grexialbornett.com/nuestra-tienda" target="_blank" rel="noopener">Tienda</NuxtLink></li>
       </ul>
       <ul class="flex items-center space-x-8">
-        <li><NuxtLink to="#">Login</NuxtLink></li>
         <li>
           <NuxtLink to="#" class="border-2 rounded-lg px-3 py-2 border-gray-900"
-            >Signup</NuxtLink
+            >Registro</NuxtLink
           >
-        </li>
-        <li>
-          <select name="country" class="bg-transparent">
-            <option value="EN" selected>EN</option>
-            <option value="FRA">FRA</option>
-          </select>
         </li>
       </ul>
     </div>
@@ -50,8 +44,11 @@ const mobileMenuOpen = ref(false);
       >
         <div class="flex items-center justify-between">
           <a href="#" class="-m-1.5 p-1.5">
-            <span class="sr-only">Jadoo</span>
-            <Logo />
+            <NuxtImg
+              src="https://grexialbornett.com/wp-content/uploads/2023/06/Grexi-Albornett-Logo.svg"
+              width="150px"
+              alt="Grexi Albornett Logo"
+            />
           </a>
           <button
             type="button"
@@ -59,7 +56,7 @@ const mobileMenuOpen = ref(false);
             @click="mobileMenuOpen = false"
             aria-label="close"
           >
-            <span class="sr-only">Close menu</span>
+            <span class="sr-only">Cerrar menu</span>
             <XMarkIcon class="h-6 w-6" aria-hidden="true" />
           </button>
         </div>
@@ -67,43 +64,27 @@ const mobileMenuOpen = ref(false);
           <div class="-my-6 divide-y divide-gray-500/10">
             <div class="space-y-2 py-6">
               <NuxtLink
-                to="#"
+                to="https://grexialbornett.com" target="_blank" rel="noopener"
                 class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
-                >Destinations</NuxtLink
+                >Inicio</NuxtLink
               >
               <NuxtLink
-                to="#"
+                to="https://grexialbornett.com/nuestro-blog" target="_blank" rel="noopener"
                 class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
-                >Hotels</NuxtLink
+                >Blog</NuxtLink
               >
               <NuxtLink
-                to="#"
+                to="https://grexialbornett.com/nuestra-tienda" target="_blank" rel="noopener"
                 class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
-                >Flights</NuxtLink
-              >
-              <NuxtLink
-                to="#"
-                class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
-                >Bookings</NuxtLink
+                >Tienda</NuxtLink
               >
             </div>
             <div class="py-6 space-y-4">
               <NuxtLink
                 to="#"
                 class="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
-                >Log in</NuxtLink
+                >Registro</NuxtLink
               >
-              <NuxtLink
-                to="#"
-                class="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
-                >Signup</NuxtLink
-              >
-              <select name="country"
-                class="-mx-3  block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50 bg-transparent"
-              >
-                <option value="EN" selected>EN</option>
-                <option value="FRA">FRA</option>
-              </select>
             </div>
           </div>
         </div>
