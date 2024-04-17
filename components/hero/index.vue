@@ -15,7 +15,7 @@ import BrushSVG from "../global/svg/BrushSVG.vue";
         <div
           class="font-volkhov font-bold text-5xl md:text-6xl lg:text-5xl text-[#181E4B]"
         >
-          <div class="flex space-x-3 mb-3">
+          <div class="flex flex-wrap space-x-3 mb-3">
             <div>Conferencia de </div>
             <div class="relative">
               Sanación

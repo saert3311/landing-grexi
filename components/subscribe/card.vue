@@ -1,5 +1,5 @@
 <template>
-    <div class="border-blue-600 rounded-2xl border  divide-y divide-gray-200 max-w-sm mx-auto mt-20"
+    <div class="border-blue-600 rounded-2xl border  divide-y divide-gray-200 max-w-sm mx-auto mt-5 md:mt-20"
     style="box-shadow: rgba(45, 50, 130, 0.15) 0px 12px 16px -4px, rgba(45, 50, 130, 0.15) 0px 4px 6px -2px;">
     <div class="p-6">
         <div class="flex justify-between">

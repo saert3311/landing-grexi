@@ -28,7 +28,7 @@
         <div class="text-center space-y-3 relative my-5 ">
       <h2 class="text-text font-bold text-2xl sm:text-3xl font-volkhov">Puntos a Tratar</h2>
     </div>
-        <div class="flex items-center justify-between">
+        <div class="flex flex-wrap items-center justify-between">
             <div class="w-full px-4 lg:w-6/12">
                 <Steps v-for="(step, index) in steps_1" :key="index" :text="step" v-bind="{ last: index == steps_1.length-1 ? true : false }"/>
             </div>

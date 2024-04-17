@@ -2,8 +2,8 @@
   <section class="p-6 sm:p-20 sm:-mt-32 font-poppins">
     <div class="bg-[#EFE9DD] rounded-tl-[10rem] rounded-lg relative">
       <MailSVG />
-      <div class="flex pb-10">
-        <div class="w-full flex flex-col justify-center align-middle px-4 lg:w-7/12">
+      <div class="flex flex-wrap pb-10">
+        <div class="w-full flex flex-col justify-center align-middle px-4 lg:w-7/12 mt-12">
             <p class="text-text font-semibold text-xl sm:text-3xl text-center">
               Registrate y comienza a transformar tu mente
             </p>
