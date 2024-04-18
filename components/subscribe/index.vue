@@ -1,5 +1,5 @@
 <template>
-  <section class="p-6 sm:p-20 sm:-mt-32 font-poppins">
+  <section class="p-6 sm:p-20 sm:-mt-32 font-poppins" id="registro">
     <div class="bg-[#EFE9DD] rounded-tl-[10rem] rounded-lg relative">
       <MailSVG />
       <div class="flex flex-wrap pb-10">
