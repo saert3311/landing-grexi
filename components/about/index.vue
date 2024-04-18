@@ -44,7 +44,7 @@
                 Emprendedores, comerciantes, trabajadores, amas de casa, adolescentes que estén trabajando o emprendiendo, empresarios y todo aquel que desee aumentar su poder adquisitivo e ingresos económicos. Hombres y mujeres
               </p>
               <a
-                href="javascript:void(0)"
+                href="#registro"
                 class="inline-flex items-center justify-center py-3 text-base font-medium text-center text-white border border-transparent rounded-md px-7 bg-gold hover:bg-opacity-90"
               >
                 Iniciar

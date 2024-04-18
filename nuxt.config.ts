@@ -28,6 +28,5 @@ export default defineNuxtConfig({
     pixelId: process.env.META_PIXEL_ID,
     autoPageView: true,
     disabled: false,
-    debug: true,
   },
 });

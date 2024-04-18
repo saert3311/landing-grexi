@@ -7,7 +7,7 @@ import BrushSVG from "../global/svg/BrushSVG.vue";
 <template>
   <div class="relative">
     <Header />
-    <section class="w-full grid grid-cols-1 md:grid-cols-2 items-center p-5 sm:p-20 my-2">
+    <section class="w-full grid grid-cols-1 md:grid-cols-2 items-center p-5 sm:p-20 my-2 gap-10">
       <div class="space-y-3">
         <p class="uppercase font-poppins text-sm text-gold font-bold">
           EN SOLO 2 - 3 HORAS
@@ -25,14 +25,16 @@ import BrushSVG from "../global/svg/BrushSVG.vue";
           <div class="leading-15">Transforma tu mente al exito financiero</div>
         </div>
         <p class="font-poppins text-gray-500 text-md">
-          Comprende de donde vienen los bloqueos y todo aquello que condiciona tu mente para no generar ingresos ni ser éxitoso
+          Comprende de donde vienen los bloqueos y todo aquello que condiciona tu mente para que empieces a generar ingresos y disfrutar del éxito
         </p>
         <div class="flex items-center space-x-3">
-          <button type="button" aria-label="Find out more"
+          <NuxtLink to="#registro">
+          <button type="button" aria-label="Ir al registro"
             class="block bg-gold text-white p-3 text-sm font-poppins rounded-md"
           >
             Inicia tu transformación
           </button>
+        </NuxtLink>
         </div>
       </div>
       <div class="mt-5 md:mt-0 flex justify-center">
