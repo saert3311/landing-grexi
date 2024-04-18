@@ -10,6 +10,7 @@
   },
   "devDependencies": {
     "@nuxt/devtools": "latest",
+    "@nuxt/image": "^1.5.0",
     "@types/node": "^18.16.19",
     "nuxt": "^3.6.3",
     "nuxt-icon": "^0.4.2"
@@ -19,6 +20,7 @@
     "@heroicons/vue": "^2.0.18",
     "@nuxtjs/tailwindcss": "^6.8.0",
     "nuxt-headlessui": "^1.1.4",
+    "nuxt3-meta-pixel": "^1.0.9",
     "pinia": "^2.1.4",
     "tailwind-scrollbar-hide": "^1.1.7"
   },
