@@ -36,7 +36,7 @@
           </div>
           <div class="w-full px-4 lg:w-1/2 xl:w-5/12">
             <div class="mt-10 lg:mt-0">
-              <span class="block mb-4 text-lg font-semibold text-gold"> Independientemente de su género, edad o profesión. </span>
+              <span class="block mb-4 text-lg font-semibold text-gold"> Independientemente de tu género, edad o profesión. </span>
               <h2 class="mb-5 text-3xl font-bold text-text sm:text-[40px]/[48px]">
                 A quienes esta dirigido
               </h2>
