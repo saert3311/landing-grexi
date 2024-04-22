@@ -25,7 +25,7 @@ const services = [
 </script>
 
 <template>
-  <section class="p-6 sm:px-20 sm:py-5">
+  <section class="p-6 sm:px-20 sm:py-5 max-w-7xl mx-auto mb-10">
     <div class="text-center space-y-3 relative">
       <p class="uppercase font-semibold text-gray-600">Reprogramar y comprender</p>
       <h2 class="text-[#14183E] font-bold text-4xl sm:text-5xl font-volkhov">Tecnicas a Utilizar</h2>

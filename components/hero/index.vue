@@ -7,7 +7,7 @@ import BrushSVG from "../global/svg/BrushSVG.vue";
 <template>
   <div class="relative">
     <Header />
-    <section class="w-full grid grid-cols-1 md:grid-cols-2 items-center p-5 sm:p-20 my-2 gap-10">
+    <section class="w-full grid grid-cols-1 md:grid-cols-2 items-center p-5 sm:px-20 sm:py-5 my-2 gap-10">
       <div class="space-y-3">
         <p class="uppercase font-poppins text-sm text-gold font-bold">
           EN SOLO 2 - 3 HORAS

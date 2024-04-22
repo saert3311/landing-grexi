@@ -10,8 +10,7 @@ import Subscribe from '~/components/subscribe/index.vue'
 
 <template>
     <LazyHero />
-    <LazyCategory />
-    <LazyAbout />
     <LazyDetails />
+    <LazyCategory />
     <LazySubscribe />
 </template>

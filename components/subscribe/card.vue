@@ -10,7 +10,7 @@
             <span class="text-base font-medium text-gray-500">/entrada</span>
         </p>
         <p class="mt-1 text-text text-xs">+ cargos por procesamiento e impuesto</p>
-        <a href="https://grexialbornett.com/producto/conferencia-de-sanacion-transforma-tu-mente-al-exito-financiero/" target="_blank"
+        <a href="https://grexialbornett.com/finalizar-compra/?add-to-cart=4741" target="_blank"
             class="flex justify-center w-full py-3 mt-4">
             <button class="block bg-gold text-white px-6 py-3 rounded-lg">
             Registrate en la conferencia
