@@ -38,10 +38,7 @@ import BrushSVG from "../global/svg/BrushSVG.vue";
         </div>
       </div>
       <div class="mt-5 md:mt-0 flex justify-center">
-        <img
-          src="/images/exito_grexi.webp"
-          alt="Success Image"
-        />
+        <div style="position:relative; width:100%; height:0px; padding-bottom:56.250%"><iframe allow="fullscreen" allowfullscreen height="100%" src="https://streamable.com/e/xyb52n?" width="100%" style="border:none; width:100%; height:100%; position:absolute; left:0px; top:0px; overflow:hidden;"></iframe></div>
         <BrushSVG />
       </div>
     </section>
