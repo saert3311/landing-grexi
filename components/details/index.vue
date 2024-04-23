@@ -24,10 +24,10 @@
           <h2
             class="text-3xl font-bold leading-tight text-black sm:text-4xl lg:text-5xl"
           >
-            Que haremos en esta conferencia.
+            Que haremos en esta conferencia
           </h2>
           <p class="mt-4 text-base leading-relaxed text-gray-600">
-            Sanar y reprogramar el origen de los escases en sus vidas para
+            Sanar y reprogramar el origen de los escasez en sus vidas para
             lograr desbloquear la abundancia económica.<br />
             Esta regresión grupal tiene la misma efectividad que la regresión
             personal y presencial. Es una inducción terapéutica que te lleva a

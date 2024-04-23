@@ -7,12 +7,12 @@
             <p class="text-text font-semibold text-xl sm:text-xl text-center">
               A quienes esta dirigido
             </p>
-            <p class="text-text text-center mt-2">
+            <p class="text-text text-center mt-2 leading-7">
                 Emprendedores<br>
                 Comerciantes<br>
                 Trabajadores<br>
                 Amas de casa<br>
-                Todo aquel que desee aumentar su poder adquisitivo e ingresos economicos
+                Y todo aquel que desee aumentar su poder adquisitivo e ingresos economicos
             </p>
             <p class="text-text font-semibold text-xl sm:text-xl text-center mt-5">
               Como y cuando se realizara
