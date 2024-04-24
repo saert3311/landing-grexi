@@ -15,7 +15,7 @@
                 Y todo aquel que desee aumentar su poder adquisitivo e ingresos económicos
             </p>
             <p class="text-text font-semibold text-xl sm:text-xl text-center mt-5">
-              Como y cuando se realizara
+              ¿Cómo y cuando se realizará?
             </p>
             <p class="text-text text-center mt-2">
                 Hora y fecha<br>
