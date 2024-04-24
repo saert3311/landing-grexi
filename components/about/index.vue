@@ -1,5 +1,5 @@
 <template>
-    <section class="overflow-hidden p-6 sm:px-20 sm:py-5 bg-white dark:bg-dark">
+    <section class="overflow-hidden p-6 sm:px-20 sm:py-5 bg-white dark:bg-dark max-w-7xl mx-auto mb-10">
       <div class="container mx-auto">
         <div class="flex flex-wrap items-center justify-between -mx-4">
           <div class="w-full px-4 lg:w-6/12">

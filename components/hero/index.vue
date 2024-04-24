@@ -7,7 +7,7 @@ import BrushSVG from "../global/svg/BrushSVG.vue";
 <template>
   <div class="relative">
     <Header />
-    <section class="w-full grid grid-cols-1 md:grid-cols-2 items-center p-5 sm:p-20 my-2 gap-10">
+    <section class="w-full grid grid-cols-1 md:grid-cols-2 items-center p-5 sm:px-20 sm:py-5 my-2 gap-10">
       <div class="space-y-3">
         <p class="uppercase font-poppins text-sm text-gold font-bold">
           EN SOLO 2 - 3 HORAS
@@ -22,7 +22,7 @@ import BrushSVG from "../global/svg/BrushSVG.vue";
               <LineSVG />
             </div>
           </div>
-          <div class="leading-15">Transforma tu mente al exito financiero</div>
+          <div class="leading-15">Transforma tu mente al éxito financiero</div>
         </div>
         <p class="font-poppins text-gray-500 text-md">
           Comprende de donde vienen los bloqueos y todo aquello que condiciona tu mente para que empieces a generar ingresos y disfrutar del éxito
@@ -38,10 +38,7 @@ import BrushSVG from "../global/svg/BrushSVG.vue";
         </div>
       </div>
       <div class="mt-5 md:mt-0 flex justify-center">
-        <img
-          src="/images/exito_grexi.webp"
-          alt="Success Image"
-        />
+        <div style="position:relative; width:100%; height:0px; padding-bottom:56.250%"><iframe allow="fullscreen" allowfullscreen height="100%" src="https://streamable.com/e/xyb52n?" width="100%" style="border:none; width:100%; height:100%; position:absolute; left:0px; top:0px; overflow:hidden;"></iframe></div>
         <BrushSVG />
       </div>
     </section>
