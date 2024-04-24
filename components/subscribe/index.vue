@@ -5,23 +5,22 @@
       <div class="flex flex-wrap pb-10">
         <div class="w-full flex flex-col justify-center align-middle px-4 lg:w-7/12 mt-12">
             <p class="text-text font-semibold text-xl sm:text-xl text-center">
-              A quienes esta dirigido
+              A quienes está dirigido
             </p>
             <p class="text-text text-center mt-2 leading-7">
                 Emprendedores<br>
                 Comerciantes<br>
                 Trabajadores<br>
                 Amas de casa<br>
-                Y todo aquel que desee aumentar su poder adquisitivo e ingresos economicos
+                Y todo aquel que desee aumentar su poder adquisitivo e ingresos económicos
             </p>
             <p class="text-text font-semibold text-xl sm:text-xl text-center mt-5">
               Como y cuando se realizara
             </p>
             <p class="text-text text-center mt-2">
                 Hora y fecha<br>
-                A traves de la plataforma zoom<br>
-                Duracion de 3-4  hora aprox<br>
-                Totalmente gratuito
+                A través de la plataforma Zoom<br>
+                Duración de 3-4  hora aprox.<br>
             </p>
         </div>
         <div class="w-full px-4 lg:w-5/12">

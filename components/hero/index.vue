@@ -22,7 +22,7 @@ import BrushSVG from "../global/svg/BrushSVG.vue";
               <LineSVG />
             </div>
           </div>
-          <div class="leading-15">Transforma tu mente al exito financiero</div>
+          <div class="leading-15">Transforma tu mente al éxito financiero</div>
         </div>
         <p class="font-poppins text-gray-500 text-md">
           Comprende de donde vienen los bloqueos y todo aquello que condiciona tu mente para que empieces a generar ingresos y disfrutar del éxito
