@@ -12,7 +12,11 @@
       </div>
       <p class="mt-0.5 text-sm text-gray-500">Entrada a tu transformacion</p>
       <p class="mt-8">
-        <span class="text-4xl font-bold tracking-tight text-gray-900">$35</span>
+        <p class="my-1 text-text text-s"  v-if="!isEnded">
+          Solo por tiempo limitado!
+      </p>
+        <span v-if="!isEnded" class="text-4xl font-bold tracking-tight text-gray-900 me-2">$35</span>
+        <span class="text-4xl tracking-tight text-gray-900" :class="{'line-through': !isEnded, 'font-bold': isEnded}">$60</span>
         <span class="text-base font-medium text-gray-500">/entrada</span>
       </p>
       <p class="mt-1 text-text text-xs">
@@ -24,7 +28,7 @@
         class="flex justify-center w-full py-3 mt-4"
       >
         <button class="block bg-gold text-white px-6 py-3 rounded-lg z-20">
-          Registrate en la conferencia
+          QUIERO MI ENTRADA
         </button>
       </a>
     </div>
@@ -55,5 +59,13 @@ const contenido = [
   "Acceso a la conferencia",
   "Acceso a la grabacion de la conferencia",
   "Cuadreno de trabajo",
+  "Grupo exclusivo de acompañamiento",
 ];
+
+const endPromoDate = ref(new Date('2024-05-16'));
+
+const isEnded = computed(() => {
+  return new Date() > endPromoDate.value;
+});
+
 </script>

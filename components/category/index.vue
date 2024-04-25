@@ -1,8 +1,4 @@
 <script setup>
-import SatelightSVG from "~/components/global/svg/SatelightSVG.vue";
-import AeroplaneSVG from "~/components/global/svg/AeroplaneSVG.vue";
-import MicrophoneSVG from "~/components/global/svg/MicrophoneSVG.vue";
-import CogSVG from "~/components/global/svg/CogSVG.vue";
 import Card from "~/components/category/Card.vue";
 
 const services = [
@@ -25,7 +21,7 @@ const services = [
 </script>
 
 <template>
-  <section class="p-6 sm:px-20 sm:py-5 max-w-7xl mx-auto mb-10">
+  <section class="p-6 sm:px-20 sm:py-5 max-w-7xl mx-auto">
     <div class="text-center space-y-3 relative">
       <p class="uppercase font-semibold text-gray-600">Reprogramar y comprender</p>
       <h2 class="text-[#14183E] font-bold text-4xl sm:text-5xl font-volkhov">Técnicas a Utilizar</h2>

@@ -10,7 +10,7 @@ import BrushSVG from "../global/svg/BrushSVG.vue";
     <section class="w-full grid grid-cols-1 md:grid-cols-2 items-center p-5 sm:px-20 sm:py-5 my-2 gap-10">
       <div class="space-y-3">
         <p class="uppercase font-poppins text-sm text-gold font-bold">
-          EN SOLO 2 - 3 HORAS
+          EN SOLO 2 HORAS
         </p>
         <div
           class="font-volkhov font-bold text-5xl md:text-6xl lg:text-5xl text-[#181E4B]"
@@ -32,7 +32,7 @@ import BrushSVG from "../global/svg/BrushSVG.vue";
           <button type="button" aria-label="Ir al registro"
             class="block bg-gold text-white p-3 text-sm font-poppins rounded-md"
           >
-            Inicia tu transformación
+            QUIERO MI ENTRADA
           </button>
         </NuxtLink>
         </div>
