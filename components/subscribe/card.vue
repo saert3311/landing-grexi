@@ -11,15 +11,15 @@
         <h2 class="text-lg font-semibold text-gray-600">Inversion</h2>
       </div>
       <p class="mt-0.5 text-sm text-gray-500">Entrada a tu transformacion</p>
-      <p class="mt-8">
-        <p class="my-1 text-text text-s"  v-if="!isEnded">
+      <div class="mt-8">
+      <p v-if="!isEnded" class="my-1 text-text text-lg font-bold">
           Solo por tiempo limitado!
       </p>
         <span v-if="!isEnded" class="text-4xl font-bold tracking-tight text-gray-900 me-2">$35</span>
         <span class="text-4xl tracking-tight text-gray-900" :class="{'line-through': !isEnded, 'font-bold': isEnded}">$60</span>
         <span class="text-base font-medium text-gray-500">/entrada</span>
-      </p>
-      <p class="mt-1 text-text text-xs">
+    </div>
+      <p class="mt-1 text-text text-sm">
         + cargos por procesamiento e impuesto
       </p>
       <a
