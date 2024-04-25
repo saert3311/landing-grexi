@@ -58,7 +58,7 @@ import checkIconSVG from "../global/svg/checkIconSVG.vue";
 const contenido = [
   "Acceso a la conferencia",
   "Acceso a la grabacion de la conferencia",
-  "Cuadreno de trabajo",
+  "Cuaderno de trabajo",
   "Grupo exclusivo de acompañamiento",
 ];
 
