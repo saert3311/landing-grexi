@@ -1,5 +1,5 @@
 <template>
-  <section class="py-5 bg-gray-50">
+  <section class="py-5 bg-gray-50 mb-10">
     <div class="max-w-5xl px-4 mx-auto sm:px-6 lg:px-8">
 
       <div class="text-center space-y-3 relative my-5">
@@ -54,7 +54,7 @@
               <div class="bg-yellow-300">
                 <div class="px-8 py-10 bg-gold">
                   <span class="block text-4xl font-bold text-white lg:text-5xl">
-                    2 - 3
+                    2
                   </span>
                   <span class="block mt-2 text-base leading-tight text-white">
                     Horas de<br />Contenido

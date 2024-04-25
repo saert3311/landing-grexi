@@ -18,9 +18,9 @@
               ¿Cómo y cuando se realizará?
             </p>
             <p class="text-text text-center mt-2">
-                Hora y fecha<br>
+                Sábado 25 de mayo a las 10am hora Miami<br>
                 A través de la plataforma Zoom<br>
-                Duración de 3-4  hora aprox.<br>
+                Duración de 2 horas.<br>
             </p>
         </div>
         <div class="w-full px-4 lg:w-5/12">
