@@ -62,7 +62,7 @@ const contenido = [
   "Grupo exclusivo de acompañamiento",
 ];
 
-const endPromoDate = ref(new Date('2024-05-15'));
+const endPromoDate = ref(new Date('2024-05-25'));
 
 const isEnded = computed(() => {
   return new Date() > endPromoDate.value;
