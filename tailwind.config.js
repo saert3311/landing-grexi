@@ -3,12 +3,13 @@ module.exports = {
   content: [],
   theme: {
     colors: {
-      primary: '#C3A095',
+      primary: '#DFC1D0',
       secondary: '#54595F',
       text: '#231F20',
-      emphasis: '#C3A095',
+      emphasis: '#DFC1D0',
       white: '#FFFFFF',
-      gold: '#cf9d5e'
+      gold: '#cf9d5e',
+      paleBg: '#F5F1EB'
     },
     extend: {},
   },

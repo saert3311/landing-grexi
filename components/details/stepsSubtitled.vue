@@ -28,7 +28,7 @@
       </div>
       <div class="pt-1 pb-8">
         <p class="mb-2 text-xl text-text">
-          <span class="font-bold">{{ props.item.title}}: </span> {{ props.item.text }}
+          <span class="font-bold" v-if="props.item.title">{{ props.item.title}}: </span>{{ props.item.text }}
         </p>
       </div>
     </div>

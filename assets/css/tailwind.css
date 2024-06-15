@@ -12,3 +12,7 @@
 html {
   scroll-behavior: smooth;
 }
+
+p {
+  text-wrap: pretty;
+}

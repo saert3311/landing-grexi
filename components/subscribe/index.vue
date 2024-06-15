@@ -7,20 +7,19 @@
             <p class="text-text font-semibold text-xl sm:text-xl text-center">
               A quienes está dirigido
             </p>
-            <p class="text-text text-center mt-2 leading-7">
-                Emprendedores<br>
-                Comerciantes<br>
-                Trabajadores<br>
-                Amas de casa<br>
-                Y todo aquel que desee aumentar su poder adquisitivo e ingresos económicos
+            <p class="text-text text-center mt-2 mx-5">
+              A madres y padres de familia que deseen mejorar su relación con sus hijos, a manejar las situaciones de estrés y a comprender que es lo mejor para si mismo y para su familia. 
             </p>
+            <p class="text-text text-center mt-2 mx-5">
+              Cualquier persona que este deseando o planificando ser madre o padre consciente y brindarle una vida sana y plena a sus hijos.             </p>
             <p class="text-text font-semibold text-xl sm:text-xl text-center mt-5">
               ¿Cómo y cuando se realizará?
             </p>
             <p class="text-text text-center mt-2">
-                Sábado 25 de mayo a las 10am hora Miami<br>
-                A través de la plataforma Zoom<br>
-                Duración de 2 horas.<br>
+              Sábado 6 de julio a las 10:00am Hora miami
+            </p>
+            <p class="text-text text-center mt-2">
+              UNICAMENTE EN VIVO por Zoom y YouTube (Si tienes una zona horaria distinta verifícala para que no te pierdas la conferencia)
             </p>
         </div>
         <div class="w-full px-4 lg:w-5/12">
@@ -37,5 +36,5 @@ import MailSVG from "~/components/global/svg/MailSVG.vue";
 import emailIconSVG from "~/components/global/svg/emailIconSVG.vue";
 import CirclesSVG from "../global/svg/CirclesSVG.vue";
 import crossPatternSVG from "../global/svg/crossPatternSVG.vue";
-import card from "./card.vue";
+import card from "./registerCard.vue";
 </script>

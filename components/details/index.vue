@@ -18,7 +18,7 @@
         </div>
       </div>
       <div
-        class="grid items-center grid-cols-1 gap-y-6 md:grid-cols-2 md:gap-x-20"
+        class="grid items-center grid-cols-1 gap-y-6 md:grid-cols-2 md:gap-x-5"
       >
         <div class="">
           <h2
@@ -26,13 +26,11 @@
           >
             Que haremos en esta conferencia
           </h2>
-          <p class="mt-4 text-base leading-relaxed text-gray-600">
-            Sanar y reprogramar el origen de los escasez en sus vidas para
-            lograr desbloquear la abundancia económica.<br />
-            Esta regresión grupal tiene la misma efectividad que la regresión
-            personal y presencial. Es una inducción terapéutica que te lleva a
-            la mente profunda para instaurar información positiva que te permita
-            el logro de tus objetivos para llevarte al éxito
+          <p class="my-4 text-base leading-relaxed text-gray-600">
+            Sanar y reprogramar una herida en tu infancia que te condiciona a ser el padre o madre que no quieres, ese que de manera inconsciente esta gestando heridas en sus propios hijos, por desconocimiento o porque también lucha diariamente con sus heridas internas gestadas en su infancia por sus propios padres.
+          </p>
+          <p class="text-base leading-relaxed text-gray-600">
+            Recuerda que esto no es tu culpa, solo no tienes las herramientas adecuadas para trascender y yo quiero brindártelas en esta ocasión. No dejes que los conflictos familiares afecten la salud emocional de tus hijos.
           </p>
         </div>
 
@@ -70,31 +68,19 @@
 </template>
 <script setup>
 import StepsSubtitled from "./stepsSubtitled.vue";
-
+// objecto admite la propiedad title se renderizara en negrita
 const steps_content = [
   {
-    title: "Dificultades financieras",
-    text: "Falta de recursos financieros que impiden cubrir necesidades básicas, deseos y objetivos.",
+    text: "En esta conferencia, yo como Hipnoterapeuta clínica y experta en constelaciones familiares, te ayudare a entender de primera mano cuales heridas emocionales se gestan en tus hijos a raíz de los conflictos familiares.",
   },
   {
-    title: "Falta de progreso",
-    text: "Incapacidad para avanzar en proyectos personales o profesionales.",
+    text: "Haremos juntos un viaje a tu propia infancia para que puedas concientizar cuales actuares de tus padres te causaron daño para que así cortes con los patrones que afectan a tus hijos.",
   },
   {
-    title: "Incapacidad para satisfacer necesidades",
-    text: "Imposibilidad de cubrir necesidades básicas o deseos debido a la falta de recursos financieros.",
+    text: "Te brindare Herramientas y estrategias para ayudar a tus hijos a enfrentar y superar las emociones negativas causadas por conflictos en el hogar.",
   },
   {
-    title: "Imposibilidad de compartir la abundancia",
-    text: "Incapacidad de compartir la abundancia o ayudar a los demás debido a la falta de recursos financieros.",
-  },
-  {
-    title: "Mala gestión financiera",
-    text: "Dificultad para administrar el dinero de manera efectiva.",
-  },
-  {
-    title: "Perspectiva financiera",
-    text: "Cómo se ve el dinero y cómo se ve uno mismo en la prosperidad.",
-  },
+    text: "Aprenderás a reconocer los signos de estrés, ansiedad y depresión en los niños, y cómo intervenir de manera adecuada.",
+  }
 ];
 </script>
