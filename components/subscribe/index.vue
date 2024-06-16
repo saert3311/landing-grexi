@@ -1,7 +1,6 @@
 <template>
   <section class="p-6 sm:p-20 sm:-mt-32 font-poppins max-w-7xl mx-auto" id="registro">
-    <div class="bg-[#EFE9DD] rounded-tl-[10rem] rounded-lg relative">
-      <MailSVG />
+    <div class="bg-primary rounded-tl-[10rem] rounded-lg relative">
       <div class="flex flex-wrap pb-10">
         <div class="w-full flex flex-col justify-center align-middle px-4 lg:w-7/12 mt-12">
             <p class="text-text font-semibold text-xl sm:text-xl text-center">

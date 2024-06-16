@@ -7,21 +7,40 @@
     "
   >
     <div class="p-6">
-      <div class="flex justify-between">
-        <h2 class="text-lg font-semibold text-gray-600">Inversion</h2>
+      <div class="flex justify-center">
+        <h2 class="text-lg font-semibold text-gray-600">Registrate en la conferencia</h2>
       </div>
-      <p class="mt-0.5 text-sm text-gray-500">Entrada a tu transformacion</p>
-      <div class="mt-8">
-      <p v-if="!isEnded" class="my-1 text-text text-lg font-bold">
-          Solo por tiempo limitado!
-      </p>
-        <span v-if="!isEnded" class="text-4xl font-bold tracking-tight text-gray-900 me-2">$35</span>
-        <span class="text-4xl tracking-tight text-gray-900" :class="{'line-through': !isEnded, 'font-bold': isEnded}">$60</span>
-        <span class="text-base font-medium text-gray-500">/entrada</span>
-    </div>
-      <p class="mt-1 text-text text-sm">
-        + cargos por procesamiento e impuesto
-      </p>
+      <div
+            class="bg-white px-6 py-3 flex space-x-3 items-center rounded-lg z-40 mt-3"
+          >
+            <svg
+              width="21"
+              height="18"
+              viewBox="0 0 21 18"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M4 6L9.4 10.05C9.75556 10.3167 10.2444 10.3167 10.6 10.05L16 6"
+                stroke="#39425D"
+                stroke-linecap="round"
+              />
+              <rect
+                x="0.5"
+                y="0.5"
+                width="20"
+                height="17"
+                rx="4.5"
+                stroke="#39425D"
+              />
+            </svg>
+            <input
+              type="text"
+              placeholder="Tu correo"
+              class="bg-transparent border-0 outline-none w-full"
+              v-model="register_email"
+            />
+          </div>
       <a
         href="https://grexialbornett.com/finalizar-compra/?add-to-cart=4741"
         target="_blank"
@@ -32,40 +51,12 @@
         </button>
       </a>
     </div>
-    <div class="px-6 pt-6 pb-8">
-      <h3 class="text-sm font-medium text-gray-900">Que incluye</h3>
-      <ul
-        role="list"
-        class="mt-6 space-y-4"
-        v-for="(item, index) in contenido"
-        :key="index"
-      >
-        <li class="flex space-x-3">
-          <div
-            class="flex justify-center items-center rounded-full bg-green-100 h-5 w-5"
-          >
-            <checkIconSVG />
-          </div>
-          <span class="text-sm text-gray-500">{{ item }}</span>
-        </li>
-      </ul>
-    </div>
   </div>
 </template>
 <script setup>
-import checkIconSVG from "../global/svg/checkIconSVG.vue";
-
-const contenido = [
-  "Acceso a la conferencia",
-  "Acceso a la grabacion de la conferencia",
-  "Cuaderno de trabajo",
-  "Grupo exclusivo de acompañamiento",
-];
-
-const endPromoDate = ref(new Date('2024-05-25'));
-
-const isEnded = computed(() => {
-  return new Date() > endPromoDate.value;
-});
+const register_email = ref("");
+const register_fullname = ref("");
+const register_phone = ref("");
+const register_country = ref("");
 
 </script>

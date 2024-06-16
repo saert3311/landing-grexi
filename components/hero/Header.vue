@@ -9,7 +9,7 @@ const mobileMenuOpen = ref(false);
 
 <template>
   <div
-    class="pt-5 pb-2 sm:px-16 sm:py-6 px-5 md:px-none flex items-center w-full justify-between font-poppins"
+    class="z-50 pt-5 pb-2 sm:px-16 sm:py-6 px-5 md:px-none flex items-center w-full justify-between font-poppins"
   >
     <img src="https://grexialbornett.com/wp-content/uploads/2023/06/Grexi-Albornett-Logo.svg" 
     width="150px" alt="Grexi Albornett Logo"

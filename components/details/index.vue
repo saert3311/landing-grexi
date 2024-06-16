@@ -20,9 +20,9 @@
       <div
         class="grid items-center grid-cols-1 gap-y-6 md:grid-cols-2 md:gap-x-5"
       >
-        <div class="">
+        <div>
           <h2
-            class="text-3xl font-bold leading-tight text-black sm:text-4xl lg:text-5xl"
+            class="text-3xl font-bold leading-tight text-brown sm:text-4xl lg:text-5xl"
           >
             Que haremos en esta conferencia
           </h2>
@@ -50,11 +50,11 @@
 
             <div class="absolute -bottom-10 -left-16">
               <div class="bg-yellow-300">
-                <div class="px-8 py-10 bg-gold">
-                  <span class="block text-4xl font-bold text-white lg:text-5xl">
+                <div class="px-8 py-10 bg-primary">
+                  <span class="block text-4xl font-bold text-brown lg:text-5xl">
                     2
                   </span>
-                  <span class="block mt-2 text-base leading-tight text-white">
+                  <span class="block mt-2 text-base leading-tight text-brown">
                     Horas de<br />Contenido
                   </span>
                 </div>

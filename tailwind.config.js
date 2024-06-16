@@ -9,7 +9,9 @@ module.exports = {
       emphasis: '#DFC1D0',
       white: '#FFFFFF',
       gold: '#cf9d5e',
-      paleBg: '#F5F1EB'
+      paleBg: '#F5F1EB',
+      brown: '#482E1D',
+      green: '#939974'
     },
     extend: {},
   },
