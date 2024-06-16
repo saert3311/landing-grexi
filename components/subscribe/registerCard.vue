@@ -10,53 +10,98 @@
       <div class="flex justify-center">
         <h2 class="text-lg font-semibold text-gray-600">Registrate en la conferencia</h2>
       </div>
-      <div
-            class="bg-white px-6 py-3 flex space-x-3 items-center rounded-lg z-40 mt-3"
-          >
-            <svg
-              width="21"
-              height="18"
-              viewBox="0 0 21 18"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M4 6L9.4 10.05C9.75556 10.3167 10.2444 10.3167 10.6 10.05L16 6"
-                stroke="#39425D"
-                stroke-linecap="round"
-              />
-              <rect
-                x="0.5"
-                y="0.5"
-                width="20"
-                height="17"
-                rx="4.5"
-                stroke="#39425D"
-              />
-            </svg>
+      <div class="bg-white px-6 py-3 flex space-x-3 items-center rounded-lg z-40 mt-3">
+          <Icon name="streamline:user-circle-single" />
             <input
               type="text"
+              placeholder="Tu Nombre"
+              class="bg-transparent border-0 outline-none w-full"
+              v-model="formData.register_name"
+            />
+      </div>
+      <div class="bg-white px-6 py-3 flex space-x-3 items-center rounded-lg z-40 mt-3">
+          <Icon name="streamline:mail-send-envelope" />
+            <input
+              type="email"
               placeholder="Tu correo"
               class="bg-transparent border-0 outline-none w-full"
-              v-model="register_email"
+              v-model="formData.register_email"
             />
-          </div>
+      </div>
+      <div class="bg-white px-6 py-3 flex space-x-3 items-center rounded-lg z-40 mt-3">
+          <Icon name="streamline:phone" />
+            <input
+              type="email"
+              placeholder="Tu telefono"
+              class="bg-transparent border-0 outline-none w-full"
+              v-model="formData.register_phone"
+            />
+      </div>
+      <div class="bg-white px-6 py-3 flex space-x-3 items-center rounded-lg z-40 mt-3">
+          <Icon name="streamline:earth-1" />
+          <Suspense fallback="Cargando...">
+            <Multiselect
+              v-model="formData.register_country"
+              :options="countries_data.data.value.countries"
+              :multiple="false"
+              placeholder="Selecciona tu país"
+              label="es_name"
+              track-by="es_name"
+              :showLabels="false"
+            />
+          </Suspense>
+      </div>
       <a
         href="https://grexialbornett.com/finalizar-compra/?add-to-cart=4741"
         target="_blank"
         class="flex justify-center w-full py-3 mt-4"
       >
-        <button class="block bg-gold text-white px-6 py-3 rounded-lg z-20">
-          QUIERO MI ENTRADA
+        <button class="block bg-transparent text-brown px-6 py-3 rounded-lg z-20 border-2 border-brown">
+          REGISTRARME EN LA CONFERENCIA
         </button>
       </a>
     </div>
   </div>
 </template>
 <script setup>
-const register_email = ref("");
-const register_fullname = ref("");
-const register_phone = ref("");
-const register_country = ref("");
+import { useVuelidate } from '@vuelidate/core';
+import { required, email, helpers } from '@vuelidate/validators';
+import Multiselect from 'vue-multiselect';
+
+const countries_data = await useFetch('/api/countries')
+
+const formData = reactive({
+  register_email: "",
+  register_name: "",
+  register_phone: "",
+  register_country: "",
+});
+
+
+
+const rules = computed(() => {
+  return {
+    register_email: {
+      required: helpers.withMessage('El correo es requerido', required),
+      email: helpers.withMessage('El correo no es valido', email),
+    },
+    register_name: {
+      required: helpers.withMessage('El nombre es requerido', required),
+    },
+    register_phone: {
+      required: helpers.withMessage('El telefono es requerido', required),
+    },
+  }
+})
+
+const v$ = useVuelidate(rules, formData);
 
 </script>
+
+<style src="node_modules/vue-multiselect/dist/vue-multiselect.css"></style>
+
+<style>
+.multiselect__content-wrapper {
+  overflow-x: clip;
+}
+</style>
