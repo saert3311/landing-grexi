@@ -6,7 +6,9 @@
         rgba(45, 50, 130, 0.15) 0px 4px 6px -2px;
     "
   >
-    <loading v-if="is_loading"/>
+    <Transition>
+      <loading v-if="is_loading"/>
+    </Transition>
     <div class="p-6">
       <div class="flex justify-center">
         <h2 class="text-lg font-semibold text-gray-600">Registrate en la conferencia</h2>
@@ -153,5 +155,14 @@ const submitData = async () => {
 <style>
 .multiselect__content-wrapper {
   overflow-x: clip;
+}
+.v-enter-active,
+.v-leave-active {
+  transition: opacity 0.5s ease;
+}
+
+.v-enter-from,
+.v-leave-to {
+  opacity: 0;
 }
 </style>
