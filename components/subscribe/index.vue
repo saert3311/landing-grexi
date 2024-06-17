@@ -20,9 +20,12 @@
             <p class="text-text text-center mt-2">
               UNICAMENTE EN VIVO por Zoom y YouTube (Si tienes una zona horaria distinta verifícala para que no te pierdas la conferencia)
             </p>
+            <p class="text-text font-semibold text-xl sm:text-xl text-center mt-5">
+              Esta conferencia es gratuita
+            </p>
         </div>
         <div class="w-full px-4 lg:w-5/12">
-          <card />
+          <registerCard />
         </div>
       </div>
       <CirclesSVG />
@@ -35,5 +38,5 @@ import MailSVG from "~/components/global/svg/MailSVG.vue";
 import emailIconSVG from "~/components/global/svg/emailIconSVG.vue";
 import CirclesSVG from "../global/svg/CirclesSVG.vue";
 import crossPatternSVG from "../global/svg/crossPatternSVG.vue";
-import card from "./registerCard.vue";
+import registerCard from "./registerCard.vue";
 </script>

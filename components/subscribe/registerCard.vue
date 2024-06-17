@@ -10,7 +10,10 @@
       <div class="flex justify-center">
         <h2 class="text-lg font-semibold text-gray-600">Registrate en la conferencia</h2>
       </div>
-      <div class="bg-white px-6 py-3 flex space-x-3 items-center rounded-lg z-40 mt-3">
+      <p class="mt-0.5 text-sm text-gray-500 text-center my-1">Completa la informacion requerida</p>
+      <div class="bg-white px-6 py-3 flex space-x-3 items-center rounded-lg z-40 mt-3"
+      :class="{'error-shadow': v$.register_name.$error}"
+      >
           <Icon name="streamline:user-circle-single" />
             <input
               type="text"
@@ -19,7 +22,11 @@
               v-model="formData.register_name"
             />
       </div>
-      <div class="bg-white px-6 py-3 flex space-x-3 items-center rounded-lg z-40 mt-3">
+      <p class="text-xs mt-2 text-red" v-for="error in v$.register_name.$errors" v-if="v$.register_name.$error">
+        {{ error.$message }}
+      </p>
+      <div class="bg-white px-6 py-3 flex space-x-3 items-center rounded-lg z-40 mt-3"
+      :class="{'error-shadow': v$.register_email.$error}">
           <Icon name="streamline:mail-send-envelope" />
             <input
               type="email"
@@ -28,7 +35,11 @@
               v-model="formData.register_email"
             />
       </div>
-      <div class="bg-white px-6 py-3 flex space-x-3 items-center rounded-lg z-40 mt-3">
+      <p class="text-xs mt-2 text-red" v-for="error in v$.register_email.$errors" v-if="v$.register_email.$error">
+        {{ error.$message }}
+      </p>
+      <div class="bg-white px-6 py-3 flex space-x-3 items-center rounded-lg z-40 mt-3"
+      :class="{'error-shadow': v$.register_phone.$error}">
           <Icon name="streamline:phone" />
             <input
               type="email"
@@ -37,9 +48,12 @@
               v-model="formData.register_phone"
             />
       </div>
-      <div class="bg-white px-6 py-3 flex space-x-3 items-center rounded-lg z-40 mt-3">
+      <p class="text-xs mt-2 text-red" v-for="error in v$.register_phone.$errors" v-if="v$.register_phone.$error">
+        {{ error.$message }}
+      </p>
+      <div class="bg-white px-6 py-3 flex space-x-3 items-center rounded-lg z-40 mt-3"
+      :class="{'error-shadow': v$.register_country.$error}">
           <Icon name="streamline:earth-1" />
-          <Suspense fallback="Cargando...">
             <Multiselect
               v-model="formData.register_country"
               :options="countries_data.data.value.countries"
@@ -49,23 +63,24 @@
               track-by="es_name"
               :showLabels="false"
             />
-          </Suspense>
       </div>
-      <a
-        href="https://grexialbornett.com/finalizar-compra/?add-to-cart=4741"
-        target="_blank"
+      <p class="text-xs mt-2 text-red" v-for="error in v$.register_country.$errors" v-if="v$.register_country.$error">
+        {{ error.$message }}
+      </p>
+      <div
         class="flex justify-center w-full py-3 mt-4"
       >
-        <button class="block bg-transparent text-brown px-6 py-3 rounded-lg z-20 border-2 border-brown">
+        <button class="block bg-transparent text-brown px-6 py-3 rounded-lg border-2 border-brown" 
+        @click="submitForm">
           REGISTRARME EN LA CONFERENCIA
         </button>
-      </a>
+      </div>
     </div>
   </div>
 </template>
 <script setup>
 import { useVuelidate } from '@vuelidate/core';
-import { required, email, helpers } from '@vuelidate/validators';
+import { required, email, helpers, numeric } from '@vuelidate/validators';
 import Multiselect from 'vue-multiselect';
 
 const countries_data = await useFetch('/api/countries')
@@ -76,8 +91,6 @@ const formData = reactive({
   register_phone: "",
   register_country: "",
 });
-
-
 
 const rules = computed(() => {
   return {
@@ -90,11 +103,22 @@ const rules = computed(() => {
     },
     register_phone: {
       required: helpers.withMessage('El telefono es requerido', required),
+      numeric: helpers.withMessage('Solo numeros de telefono', numeric),
+    },
+    register_country: {
+      required: helpers.withMessage('Elige un pais', required),
     },
   }
 })
 
 const v$ = useVuelidate(rules, formData);
+
+const submitForm = () => {
+  v$.value.$validate();
+  if (v$.value.$invalid) {
+    return;
+  }
+};
 
 </script>
 
