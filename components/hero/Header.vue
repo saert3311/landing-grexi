@@ -22,7 +22,7 @@ const mobileMenuOpen = ref(false);
       </ul>
       <ul class="flex items-center space-x-8">
         <li>
-          <NuxtLink to="#registro" class="border-2 rounded-lg px-3 py-2 border-gray-900"
+          <NuxtLink to="#registro" class="border-2 rounded-lg px-3 py-2 border-gray-900" external
             >Registro</NuxtLink
           >
         </li>

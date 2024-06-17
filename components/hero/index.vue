@@ -27,7 +27,7 @@ import BrushSVG from "../global/svg/BrushSVG.vue";
           ¡Atención papás! ¿Te preocupa cómo los conflictos familiares afectan la salud emocional y mental de tus hijos? No te pierdas mi conferencia GRATUITA de Afectaciones emocionales y mentales en los niños por los conflictos familiares.
         </p>
         <div class="flex items-center space-x-3">
-          <NuxtLink to="#registro">
+          <NuxtLink to="#registro" external>
           <button type="button" aria-label="Ir al registro"
             class="block bg-transparent  border-2 text-green border-green p-3 text-sm font-poppins rounded-md font-bold rounded-lg"
           >
