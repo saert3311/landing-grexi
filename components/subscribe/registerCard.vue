@@ -71,8 +71,11 @@
         {{ error.$message }}
       </p>
       <div class="flex justify-center">
-      <NuxtTurnstile v-model="formData.token" class="mt-3" theme="light"/>
+      <NuxtTurnstile v-model="formData.token" class="mt-3" theme="light" ref="turnstile" />
       </div>
+      <message type="error" class="mt-2" v-if="has_error">
+        {{ has_error }}
+      </message>
       <div
         class="flex justify-center w-full py-3 mt-4"
       >
@@ -89,9 +92,12 @@ import { useVuelidate } from '@vuelidate/core';
 import { required, email, helpers, numeric } from '@vuelidate/validators';
 import Multiselect from 'vue-multiselect';
 import loading from './loading.vue';
+import message from '../global/message.vue';
 
 const is_loading = ref(false);
+const has_error = ref(false);
 const countries_data = await useFetch('/api/countries')
+const turnstile = ref()
 
 const formData = reactive({
   register_email: "",
@@ -123,6 +129,7 @@ const rules = computed(() => {
 const v$ = useVuelidate(rules, formData);
 
 const do_submit = async () => {
+  has_error.value = "";
   v$.value.$validate();
   if (v$.value.$invalid) {
     return;
@@ -132,20 +139,22 @@ const do_submit = async () => {
 
 const submitData = async () => {
   is_loading.value = true;
-  const response = await $fetch('/api/register_dummy', {
+  try {
+  const response = await $fetch('/api/add_contact', {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',
     },
-    body: JSON.stringify({...formData, list_id: 1}),
+    body: JSON.stringify({...formData, list_id: 12}),
   });
-
-  if (response.ok) {
-    alert('Registrado correctamente');
-  } else {
-    alert('Error al registrar');
+  if (response.status === 200){
+    await navigateTo({ path: '/thank-you' })
   }
+} catch (error) {
+  has_error.value = error.statusMessage;
+  turnstile.value?.reset() // Reset the turnstile if there is an error
   is_loading.value = false;
+}
 };
 
 </script>

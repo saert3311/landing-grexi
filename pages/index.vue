@@ -6,8 +6,8 @@ import Subscribe from '~/components/subscribe/index.vue'
 </script>
 
 <template>
-    <LazyHero />
-    <LazyDetails />
-    <LazySubscribe />
-    <LazyCategory />
+    <Hero />
+    <Details />
+    <Subscribe />
+    <Category />
 </template>

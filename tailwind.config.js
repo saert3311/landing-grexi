@@ -1,6 +1,13 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: [],
+  content: [
+    "./components/**/*.{js,vue,ts}",
+    "./layouts/**/*.vue",
+    "./pages/**/*.vue",
+    "./plugins/**/*.{js,ts}",
+    "./app.vue",
+    "./error.vue",
+  ],
   theme: {
     colors: {
       primary: '#DFC1D0',
@@ -8,10 +15,10 @@ module.exports = {
       text: '#231F20',
       emphasis: '#DFC1D0',
       white: '#FFFFFF',
-      gold: '#cf9d5e',
+      gold: '#CF9D5E',
       paleBg: '#F5F1EB',
-      brown: '#482E1D',
-      green: '#939974'
+      grexiBrown: '#482E1D',
+      grexiGreen: '#939974',
     },
     extend: {},
   },

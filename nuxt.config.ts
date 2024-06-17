@@ -2,6 +2,13 @@
 export default defineNuxtConfig({
   devtools: { enabled: true },
   modules: ["nuxt-icon", "@nuxtjs/tailwindcss", "nuxt-headlessui", "@nuxt/image", 'nuxt3-meta-pixel', '@nuxtjs/turnstile'],
+  postcss: {
+    plugins: {
+      tailwindcss: {},
+      autoprefixer: {},
+    },
+  },
+  css: ['~/assets/css/tailwind.css'],
   tailwindcss: {
     cssPath: "~/assets/css/tailwind.css",
     config: {
