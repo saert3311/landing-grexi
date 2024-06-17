@@ -1,11 +1,12 @@
 <template>
   <div
-    class="border-blue-600 rounded-2xl border divide-y divide-gray-200 max-w-sm mx-auto mt-5 md:mt-20"
+    class="border-blue-600 rounded-2xl border divide-y divide-gray-200 max-w-sm mx-auto mt-5 md:mt-20 relative"
     style="
       box-shadow: rgba(45, 50, 130, 0.15) 0px 12px 16px -4px,
         rgba(45, 50, 130, 0.15) 0px 4px 6px -2px;
     "
   >
+    <loading v-if="is_loading"/>
     <div class="p-6">
       <div class="flex justify-center">
         <h2 class="text-lg font-semibold text-gray-600">Registrate en la conferencia</h2>
@@ -67,11 +68,14 @@
       <p class="text-xs mt-2 text-red" v-for="error in v$.register_country.$errors" v-if="v$.register_country.$error">
         {{ error.$message }}
       </p>
+      <div class="flex justify-center">
+      <NuxtTurnstile v-model="formData.token" class="mt-3" theme="light"/>
+      </div>
       <div
         class="flex justify-center w-full py-3 mt-4"
       >
         <button class="block bg-transparent text-brown px-6 py-3 rounded-lg border-2 border-brown" 
-        @click="submitForm">
+        @click="do_submit">
           REGISTRARME EN LA CONFERENCIA
         </button>
       </div>
@@ -82,7 +86,9 @@
 import { useVuelidate } from '@vuelidate/core';
 import { required, email, helpers, numeric } from '@vuelidate/validators';
 import Multiselect from 'vue-multiselect';
+import loading from './loading.vue';
 
+const is_loading = ref(false);
 const countries_data = await useFetch('/api/countries')
 
 const formData = reactive({
@@ -90,6 +96,7 @@ const formData = reactive({
   register_name: "",
   register_phone: "",
   register_country: "",
+  token: "",
 });
 
 const rules = computed(() => {
@@ -113,11 +120,30 @@ const rules = computed(() => {
 
 const v$ = useVuelidate(rules, formData);
 
-const submitForm = () => {
+const do_submit = async () => {
   v$.value.$validate();
   if (v$.value.$invalid) {
     return;
   }
+  await submitData();
+};
+
+const submitData = async () => {
+  is_loading.value = true;
+  const response = await $fetch('/api/register_dummy', {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json',
+    },
+    body: JSON.stringify({...formData, list_id: 1}),
+  });
+
+  if (response.ok) {
+    alert('Registrado correctamente');
+  } else {
+    alert('Error al registrar');
+  }
+  is_loading.value = false;
 };
 
 </script>

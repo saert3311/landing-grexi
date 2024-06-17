@@ -19,6 +19,7 @@
     "@headlessui/vue": "^1.7.14",
     "@heroicons/vue": "^2.0.18",
     "@nuxtjs/tailwindcss": "^6.8.0",
+    "@nuxtjs/turnstile": "^0.8.0",
     "@vuelidate/core": "^2.0.3",
     "@vuelidate/validators": "^2.0.4",
     "nuxt-headlessui": "^1.1.4",

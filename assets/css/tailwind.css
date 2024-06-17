@@ -20,3 +20,7 @@ p {
 .error-shadow {
   box-shadow: 0 0 0 4px rgba(239, 68, 68, 0.45);
 }
+
+.z-51 {
+  z-index: 51;
+}
