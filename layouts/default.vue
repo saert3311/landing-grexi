@@ -22,7 +22,7 @@ useHead({
     { property: "og:url", content: "https://conferencia.grexialbornett.com" },
     {
       property: "og:image",
-      content: "https://conferencia-grexi.pages.dev/images/padres_grexi.webp",
+      content: "https://conferencia-grexi.pages.dev/images/flyer_padres_2.webp",
     },
     { property: "og:type", content: "website" },
     { property: "og:locale", content: "es_ES" },
@@ -31,7 +31,7 @@ useHead({
     { name: "twitter:card", content: "summary_large_image" },
     {
       name: "twitter:image",
-      content: "https://conferencia-grexi.pages.dev/images/padres_grexi.webp",
+      content: "https://conferencia-grexi.pages.dev/images/flyer_padres_2.webp",
     },
     {
       name: "twitter:image:alt",
