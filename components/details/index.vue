@@ -38,7 +38,7 @@
           <div class="relative w-full max-w-xs mt-4 mb-10 ml-auto">
             <img
               class="ml-auto"
-              src="/images/grexi_description.webp"
+              src="/images/padres_grexi_principal.webp"
               alt="Grexi Albornett"
             />
 

@@ -20,14 +20,14 @@ import message from "../global/message.vue";
           Atento a tu buzon de correo electronico no olvides revisar la bandeja de spam, enviaremos toda la informacion necesaria para que puedas acceder a la conferencia.
         </p>
         <p class="font-poppins text-gray-500 text-md mb-5">
-          <icon name="ic:baseline-whatsapp" class="inline-block" color="green" size="24"/>No olvides unirte a nuestro grupo de whatsapp para recibir informacion adicional (el enlace se encuentra en el correo).
+          No olvides unirte a nuestro grupo de whatsapp para recibir informacion adicional y regalos.
         </p>
         <div class="flex items-center space-x-3">
-          <NuxtLink to="https://grexialbornett.com">
+          <NuxtLink to="https://chat.whatsapp.com/GI3WUSAnpW3IuyEdnYbdEb">
           <button type="button" aria-label="Ir al registro"
             class="block bg-transparent  border-2 text-green border-green p-3 text-sm font-poppins rounded-md font-bold rounded-lg"
           >
-            PAGINA PRINCIPAL
+          <icon name="ic:baseline-whatsapp" class="inline-block me-2" color="green" size="24"/>UNIRME AL GRUPO DE WHATSAPP
           </button>
         </NuxtLink>
         </div>

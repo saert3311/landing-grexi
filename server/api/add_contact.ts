@@ -25,7 +25,7 @@ export default defineEventHandler(async (event) => {
     const first_name = name_array[0]
     const last_name = name_array.slice(1).join(' ')
 
-    const options = {
+    const contact_options = {
         method: 'POST',
         headers: {
             accept: 'application/json', 
@@ -42,16 +42,40 @@ export default defineEventHandler(async (event) => {
           listIds: [12]
         })
       };
-      
-      const response = await fetch('https://api.brevo.com/v3/contacts', options)
-      const result = await response.json()
 
-      if (!response.ok) {
+    const email_options = {
+        method: 'POST',
+        headers: {
+            accept: 'application/json', 
+            'content-type': 'application/json', 
+            'api-key': process.env.BREVO_API_KEY
+        },
+        body: JSON.stringify({
+            params: {"NOMBRE": first_name, "EMAIL": body_data.register_email}, 
+            templateId: 20,
+            to: [{email: body_data.register_email, name: body_data.register_name}]
+        })
+      };
+      
+    const contact_response = await fetch('https://api.brevo.com/v3/contacts', contact_options)
+
+    if (!contact_response.ok) {
+        const contact_result = await contact_response.json()
         throw createError({
             statusCode: 400,
-            statusMessage: result.message
-        })}
+            statusMessage: contact_result.message
+        })
+    }
 
+    const email_result = await fetch('https://api.brevo.com/v3/smtp/email', email_options)
+    
+    if (!email_result.ok) {
+        const email_response = await email_result.json()
+        throw createError({
+            statusCode: 400,
+            statusMessage: email_response.message
+        })
+    }
 
     return {
         status: 200,
