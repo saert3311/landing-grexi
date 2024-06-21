@@ -1,11 +1,7 @@
 <template>
   <div
     class="border-blue-600 rounded-2xl border divide-y divide-gray-200 max-w-sm mx-auto mt-5 md:mt-20 relative"
-    style="
-      box-shadow: rgba(45, 50, 130, 0.15) 0px 12px 16px -4px,
-        rgba(45, 50, 130, 0.15) 0px 4px 6px -2px;
-    "
-  >
+    style="box-shadow: rgba(45, 50, 130, 0.15) 0px 12px 16px -4px, rgba(45, 50, 130, 0.15) 0px 4px 6px -2px;">
     <Transition>
       <loading v-if="is_loading"/>
     </Transition>
@@ -49,8 +45,11 @@
               placeholder="Tu telefono"
               class="bg-transparent border-0 outline-none w-full"
               v-model="formData.register_phone"
+              @focus="registerPhoneHasFocus = true"
+              @blur="registerPhoneHasFocus = false"
             />
       </div>
+      <p class="text-xs mt-1" v-if="registerPhoneHasFocus">No olvides incluir el codigo de tu pais, solo numeros.</p>
       <p class="text-xs mt-2 text-red" v-for="error in v$.register_phone.$errors" v-if="v$.register_phone.$error">
         {{ error.$message }}
       </p>
@@ -95,9 +94,10 @@ import loading from './loading.vue';
 import message from '../global/message.vue';
 
 const is_loading = ref(false);
-const has_error = ref(false);
+const has_error = ref('');
 const countries_data = await useFetch('/api/countries')
 const turnstile = ref()
+const registerPhoneHasFocus = ref(false)
 
 const formData = reactive({
   register_email: "",
@@ -147,11 +147,12 @@ const submitData = async () => {
     },
     body: JSON.stringify({...formData, list_id: 12}),
   });
-  if (response.status === 200){
+  if (response.ok){
     await navigateTo({ path: '/thank-you' })
   }
 } catch (error) {
   has_error.value = error.statusMessage;
+} finally {
   turnstile.value?.reset() // Reset the turnstile if there is an error
   is_loading.value = false;
 }
