@@ -12,17 +12,21 @@
     "@nuxt/devtools": "latest",
     "@nuxt/image": "^1.5.0",
     "@types/node": "^18.16.19",
-    "nuxt": "^3.6.3",
+    "nuxt": "^3.12.2",
     "nuxt-icon": "^0.4.2"
   },
   "dependencies": {
     "@headlessui/vue": "^1.7.14",
     "@heroicons/vue": "^2.0.18",
     "@nuxtjs/tailwindcss": "^6.8.0",
+    "@nuxtjs/turnstile": "^0.8.0",
+    "@vuelidate/core": "^2.0.3",
+    "@vuelidate/validators": "^2.0.4",
     "nuxt-headlessui": "^1.1.4",
     "nuxt3-meta-pixel": "^1.0.9",
     "pinia": "^2.1.4",
-    "tailwind-scrollbar-hide": "^1.1.7"
+    "tailwind-scrollbar-hide": "^1.1.7",
+    "vue-multiselect": "^3.0.0"
   },
   "overrides": {
     "vue": "latest"

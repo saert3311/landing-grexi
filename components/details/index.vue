@@ -18,21 +18,19 @@
         </div>
       </div>
       <div
-        class="grid items-center grid-cols-1 gap-y-6 md:grid-cols-2 md:gap-x-20"
+        class="grid items-center grid-cols-1 gap-y-6 md:grid-cols-2 md:gap-x-5"
       >
-        <div class="">
+        <div>
           <h2
-            class="text-3xl font-bold leading-tight text-black sm:text-4xl lg:text-5xl"
+            class="text-3xl font-bold leading-tight text-brown sm:text-4xl lg:text-5xl"
           >
-            Que haremos en esta conferencia
+            ¿Que haremos en esta conferencia?
           </h2>
-          <p class="mt-4 text-base leading-relaxed text-gray-600">
-            Sanar y reprogramar el origen de los escasez en sus vidas para
-            lograr desbloquear la abundancia económica.<br />
-            Esta regresión grupal tiene la misma efectividad que la regresión
-            personal y presencial. Es una inducción terapéutica que te lleva a
-            la mente profunda para instaurar información positiva que te permita
-            el logro de tus objetivos para llevarte al éxito
+          <p class="my-4 text-base leading-relaxed text-gray-600">
+            Sanar y reprogramar una herida en tu infancia que te condiciona a ser el padre o madre que no quieres, ese que de manera inconsciente esta gestando heridas en sus propios hijos, por desconocimiento o porque también lucha diariamente con sus heridas internas gestadas en su infancia por sus propios padres.
+          </p>
+          <p class="text-base leading-relaxed text-gray-600">
+            Recuerda que esto no es tu culpa, solo no tienes las herramientas adecuadas para trascender y yo quiero brindártelas en esta ocasión. No dejes que los conflictos familiares afecten la salud emocional de tus hijos.
           </p>
         </div>
 
@@ -40,7 +38,7 @@
           <div class="relative w-full max-w-xs mt-4 mb-10 ml-auto">
             <img
               class="ml-auto"
-              src="/images/grexi_description.webp"
+              src="/images/padres_grexi_principal.webp"
               alt="Grexi Albornett"
             />
 
@@ -52,11 +50,11 @@
 
             <div class="absolute -bottom-10 -left-16">
               <div class="bg-yellow-300">
-                <div class="px-8 py-10 bg-gold">
-                  <span class="block text-4xl font-bold text-white lg:text-5xl">
+                <div class="px-8 py-10 bg-primary">
+                  <span class="block text-4xl font-bold text-brown lg:text-5xl">
                     2
                   </span>
-                  <span class="block mt-2 text-base leading-tight text-white">
+                  <span class="block mt-2 text-base leading-tight text-brown">
                     Horas de<br />Contenido
                   </span>
                 </div>
@@ -70,31 +68,19 @@
 </template>
 <script setup>
 import StepsSubtitled from "./stepsSubtitled.vue";
-
+// objecto admite la propiedad title se renderizara en negrita
 const steps_content = [
   {
-    title: "Dificultades financieras",
-    text: "Falta de recursos financieros que impiden cubrir necesidades básicas, deseos y objetivos.",
+    text: "En esta conferencia, yo como Hipnoterapeuta clínica y experta en constelaciones familiares, te ayudare a entender de primera mano cuales heridas emocionales se gestan en tus hijos a raíz de los conflictos familiares.",
   },
   {
-    title: "Falta de progreso",
-    text: "Incapacidad para avanzar en proyectos personales o profesionales.",
+    text: "Haremos juntos un viaje a tu propia infancia para que puedas concientizar cuales actuares de tus padres te causaron daño para que así cortes con los patrones que afectan a tus hijos.",
   },
   {
-    title: "Incapacidad para satisfacer necesidades",
-    text: "Imposibilidad de cubrir necesidades básicas o deseos debido a la falta de recursos financieros.",
+    text: "Te brindare Herramientas y estrategias para ayudar a tus hijos a enfrentar y superar las emociones negativas causadas por conflictos en el hogar.",
   },
   {
-    title: "Imposibilidad de compartir la abundancia",
-    text: "Incapacidad de compartir la abundancia o ayudar a los demás debido a la falta de recursos financieros.",
-  },
-  {
-    title: "Mala gestión financiera",
-    text: "Dificultad para administrar el dinero de manera efectiva.",
-  },
-  {
-    title: "Perspectiva financiera",
-    text: "Cómo se ve el dinero y cómo se ve uno mismo en la prosperidad.",
-  },
+    text: "Aprenderás a reconocer los signos de estrés, ansiedad y depresión en los niños, y cómo intervenir de manera adecuada.",
+  }
 ];
 </script>
