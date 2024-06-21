@@ -45,8 +45,11 @@
               placeholder="Tu telefono"
               class="bg-transparent border-0 outline-none w-full"
               v-model="formData.register_phone"
+              @focus="registerPhoneHasFocus = true"
+              @blur="registerPhoneHasFocus = false"
             />
       </div>
+      <p class="text-xs mt-1" v-if="registerPhoneHasFocus">No olvides incluir el codigo de tu pais, solo numeros.</p>
       <p class="text-xs mt-2 text-red" v-for="error in v$.register_phone.$errors" v-if="v$.register_phone.$error">
         {{ error.$message }}
       </p>
@@ -94,6 +97,7 @@ const is_loading = ref(false);
 const has_error = ref('');
 const countries_data = await useFetch('/api/countries')
 const turnstile = ref()
+const registerPhoneHasFocus = ref(false)
 
 const formData = reactive({
   register_email: "",
