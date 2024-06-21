@@ -5,7 +5,7 @@
       <div class="flex flex-wrap pb-10">
         <div class="w-full flex flex-col justify-center align-middle px-4 lg:w-7/12 mt-12">
             <p class="text-text font-semibold text-xl sm:text-xl text-center mt-5">
-              A quienes está dirigido
+              ¿A quienes está dirigido?
             </p>
             <p class="text-text text-center mt-2 mx-5">
               A madres y padres de familia que deseen mejorar su relación con sus hijos, a manejar las situaciones de estrés y a comprender que es lo mejor para si mismo y para su familia. 

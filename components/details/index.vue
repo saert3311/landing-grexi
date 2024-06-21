@@ -24,7 +24,7 @@
           <h2
             class="text-3xl font-bold leading-tight text-brown sm:text-4xl lg:text-5xl"
           >
-            Que haremos en esta conferencia
+            ¿Que haremos en esta conferencia?
           </h2>
           <p class="my-4 text-base leading-relaxed text-gray-600">
             Sanar y reprogramar una herida en tu infancia que te condiciona a ser el padre o madre que no quieres, ese que de manera inconsciente esta gestando heridas en sus propios hijos, por desconocimiento o porque también lucha diariamente con sus heridas internas gestadas en su infancia por sus propios padres.
