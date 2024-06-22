@@ -73,7 +73,7 @@
       <NuxtTurnstile v-model="formData.token" class="mt-3" theme="light" ref="turnstile" />
       </div>
       <message type="error" class="mt-2" v-if="has_error">
-        {{ has_error }}
+        {{ error_message }}
       </message>
       <div
         class="flex justify-center w-full py-3 mt-4"
@@ -94,7 +94,8 @@ import loading from './loading.vue';
 import message from '../global/message.vue';
 
 const is_loading = ref(false);
-const has_error = ref('');
+const has_error = ref(false);
+const error_message = ref('')
 const countries_data = await useFetch('/api/countries')
 const turnstile = ref()
 const registerPhoneHasFocus = ref(false)
@@ -151,7 +152,8 @@ const submitData = async () => {
     await navigateTo({ path: '/thank-you' })
   }
 } catch (error) {
-  has_error.value = error.statusMessage;
+  has_error.value = true;
+  error_message.value = error.statusMessage;
 } finally {
   turnstile.value?.reset() // Reset the turnstile if there is an error
   is_loading.value = false;
