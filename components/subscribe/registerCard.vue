@@ -148,12 +148,11 @@ const submitData = async () => {
     },
     body: JSON.stringify({...formData, list_id: 12}),
   });
-  if (response.ok){
     await navigateTo({ path: '/thank-you' })
-  }
 } catch (error) {
+  console.log(error.data)
   has_error.value = true;
-  error_message.value = error.statusMessage;
+  error_message.value = error.data.statusMessage;
 } finally {
   turnstile.value?.reset() // Reset the turnstile if there is an error
   is_loading.value = false;
