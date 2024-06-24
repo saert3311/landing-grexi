@@ -88,7 +88,7 @@
 </template>
 <script setup>
 import { useVuelidate } from '@vuelidate/core';
-import { required, email, helpers, numeric } from '@vuelidate/validators';
+import { required, email, helpers } from '@vuelidate/validators';
 import Multiselect from 'vue-multiselect';
 import loading from './loading.vue';
 import message from '../global/message.vue';
@@ -119,7 +119,6 @@ const rules = computed(() => {
     },
     register_phone: {
       required: helpers.withMessage('El telefono es requerido', required),
-      numeric: helpers.withMessage('Solo numeros de telefono', numeric),
     },
     register_country: {
       required: helpers.withMessage('Elige un pais', required),
