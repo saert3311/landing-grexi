@@ -26,7 +26,7 @@
             </p>
         </div>
         <div class="w-full px-4 lg:w-5/12">
-          <registerCard />
+
         </div>
       </div>
       <CirclesSVG />
