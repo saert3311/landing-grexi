@@ -7,38 +7,38 @@ useHead({
   meta: [
     {
       property: "og:title",
-      content: `Padres Sanos, Hijos felices - Conferencia gratuita - Grexi Albornett`,
+      content: `Padres Conectados, Hijos Libres - Conferencia online - Grexi Albornett`,
     },
     {
       name: "description",
       content:
-        "Sana y reprograma las heridas de tu infancia que te condiciona a ser el padre o madre que no quieres. No dejes que los conflictos familiares afecten la salud emocional de tus hijos. ",
+        "Un taller terapéutico para darte los recursos que necesitas para ser el padre que tus hijos necesitan que seas.",
     },
     {
       property: "og:description",
       content:
-        "Sana y reprograma las heridas de tu infancia que te condiciona a ser el padre o madre que no quieres.",
+        "Un taller terapéutico para darte los recursos que necesitas para ser el padre que tus hijos necesitan que seas.",
     },
     { property: "og:url", content: "https://conferencia.grexialbornett.com" },
     {
       property: "og:image",
-      content: "https://conferencia-grexi.pages.dev/images/flyer_padres_2.webp",
+      content: "https://conferencia-grexi.pages.dev/images/sticker_taller_hijos_conectados.webp",
     },
     { property: "og:type", content: "website" },
     { property: "og:locale", content: "es_ES" },
-    { property: "og:site_name", content: "Padres Sanos, Hijos felices - Conferencia gratuita - Grexi Albornett" },
+    { property: "og:site_name", content: "Padres Conectados, Hijos Libres - Conferencia online - Grexi Albornett" },
     { property: "og:locale", content: "es_ES" },
     { name: "twitter:card", content: "summary_large_image" },
     {
       name: "twitter:image",
-      content: "https://conferencia-grexi.pages.dev/images/flyer_padres_2.webp",
+      content: "https://conferencia-grexi.pages.dev/images/sticker_taller_hijos_conectados.webp",
     },
     {
       name: "twitter:image:alt",
-      content: "Padres Sanos, Hijos felices - Conferencia gratuita - Grexi Albornett",
+      content: "Padres Conectados, Hijos Libres - Conferencia online - Grexi Albornett",
     },	
   ],
-  title: `Padres Sanos, Hijos felices - Conferencia gratuita - Grexi Albornett`,
+  title: `Padres Conectados, Hijos Libres - Conferencia online - Grexi Albornett`,
 });
 </script>
 
