@@ -24,14 +24,12 @@
           <h2
             class="text-3xl font-bold leading-tight text-brown sm:text-4xl lg:text-5xl"
           >
-            ¿Que haremos en esta conferencia?
+            ¿Que voy a aprender con esta conferencia
           </h2>
           <p class="my-4 text-base leading-relaxed text-gray-600">
-            Sanar y reprogramar una herida en tu infancia que te condiciona a ser el padre o madre que no quieres, ese que de manera inconsciente esta gestando heridas en sus propios hijos, por desconocimiento o porque también lucha diariamente con sus heridas internas gestadas en su infancia por sus propios padres.
-          </p>
+            En esta conferencia vas aprender a ser el padre que tus hijos necesitan que seas, conectando directamente con sus necesidades tantos emocionales, psicológicas y físicas. Permitiéndose a ambos tener una dinámica sana donde tanto el hijo como el padre puedan crecer conscientemente sanos en armonía, superando la sobre exigencia de la sociedad actual y tomando consciencia sobre lo que daña a tu hijo para no repetirlo.           </p>
           <p class="text-base leading-relaxed text-gray-600">
-            Recuerda que esto no es tu culpa, solo no tienes las herramientas adecuadas para trascender y yo quiero brindártelas en esta ocasión. No dejes que los conflictos familiares afecten la salud emocional de tus hijos.
-          </p>
+            Descubre cómo ser un mejor padre a través del autoconocimiento. Aprende a gestionar tus emociones, mejorar tu comunicación con tus hijos y fortalecer los lazos familiares. No te pierdas esta oportunidad de crecer como padre y como persona, tus hijos necesitan un padre o madre feliz que les pueda brindar una crianza consciente.           </p>
         </div>
 
         <div class="relative pl-20 pr-6 sm:pl-6 md:px-0">
@@ -51,11 +49,11 @@
             <div class="absolute -bottom-10 -left-16">
               <div class="bg-yellow-300">
                 <div class="px-8 py-10 bg-primary">
-                  <span class="block text-4xl font-bold text-brown lg:text-5xl">
+                  <!--<span class="block text-4xl font-bold text-brown lg:text-5xl">
                     2
-                  </span>
-                  <span class="block mt-2 text-base leading-tight text-brown">
-                    Horas de<br />Contenido
+                  </span>-->
+                  <span class="block mt-2 text-base leading-tight text-brown font-bold text-xl">
+                    TOTALMENTE<br />EN VIVO
                   </span>
                 </div>
               </div>
@@ -71,16 +69,19 @@ import StepsSubtitled from "./stepsSubtitled.vue";
 // objecto admite la propiedad title se renderizara en negrita
 const steps_content = [
   {
-    text: "En esta conferencia, yo como Hipnoterapeuta clínica y experta en constelaciones familiares, te ayudare a entender de primera mano cuales heridas emocionales se gestan en tus hijos a raíz de los conflictos familiares.",
+    text: "El padre que soy desde el individuo que soy",
   },
   {
-    text: "Haremos juntos un viaje a tu propia infancia para que puedas concientizar cuales actuares de tus padres te causaron daño para que así cortes con los patrones que afectan a tus hijos.",
+    text: "Mi hijo es un espejo de mí y de mi relación con mi pareja.",
   },
   {
-    text: "Te brindare Herramientas y estrategias para ayudar a tus hijos a enfrentar y superar las emociones negativas causadas por conflictos en el hogar.",
+    text: "Traumas que me condicionan a ser el padre que soy.",
   },
   {
-    text: "Aprenderás a reconocer los signos de estrés, ansiedad y depresión en los niños, y cómo intervenir de manera adecuada.",
+    text: "Toma de conciencia sobre la maternidad o paternidad que ejerzo.",
+  },
+  {
+    text: "Lo sobre exigencia social, personal e infantil.",
   }
 ];
 </script>

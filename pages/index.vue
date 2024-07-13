@@ -1,7 +1,6 @@
 <script setup>
 import Hero from '~/components/hero/index.vue'
 import Details from '~/components/details/index.vue'
-import Category from '~/components/category/index.vue'
 import Subscribe from '~/components/subscribe/index.vue'
 </script>
 
@@ -9,5 +8,4 @@ import Subscribe from '~/components/subscribe/index.vue'
     <Hero />
     <Details />
     <Subscribe />
-    <Category />
 </template>
