@@ -27,9 +27,10 @@
             ¿Que voy a aprender con esta conferencia?
           </h2>
           <p class="my-4 text-base leading-relaxed text-gray-600">
-            En esta conferencia vas aprender a ser el padre que tus hijos necesitan que seas, conectando directamente con sus necesidades tantos emocionales, psicológicas y físicas. Permitiéndose a ambos tener una dinámica sana donde tanto el hijo como el padre puedan crecer conscientemente sanos en armonía, superando la sobre exigencia de la sociedad actual y tomando consciencia sobre lo que daña a tu hijo para no repetirlo.           </p>
+            En esta conferencia vas aprender a ser el padre que tus hijos necesitan que seas, conectando directamente con sus necesidades tantos emocionales, psicológicas y físicas. Permitiéndole a ambos tener una dinámica sana donde tanto el hijo como el padre puedan crecer conscientemente sanos en armonía, superando la sobre exigencia de la sociedad actual y tomando consciencia sobre lo que daña a tu hijo para no repetirlo.           </p>
           <p class="text-base leading-relaxed text-gray-600">
-            Descubre cómo ser un mejor padre a través del autoconocimiento. Aprende a gestionar tus emociones, mejorar tu comunicación con tus hijos y fortalecer los lazos familiares. No te pierdas esta oportunidad de crecer como padre y como persona, tus hijos necesitan un padre o madre feliz que les pueda brindar una crianza consciente.           </p>
+            Descubre cómo ser un mejor padre a través del autoconocimiento. Aprende a gestionar tus emociones, mejorar tu comunicación con tus hijos y fortalecer los lazos familiares. No te pierdas esta oportunidad de crecer como padre y como persona, tus hijos necesitan un padre o madre feliz que les pueda brindar una crianza consciente.</p>
+          <p class="text-base leading-relaxed text-gray-600">Utilizaremos en vivo la técnica de hipnosis clínica regresiva para reprogramacion mental</p>
         </div>
 
         <div class="relative pl-20 pr-6 sm:pl-6 md:px-0">
@@ -81,7 +82,7 @@ const steps_content = [
     text: "Toma de conciencia sobre la maternidad o paternidad que ejerzo.",
   },
   {
-    text: "Lo sobre exigencia social, personal e infantil.",
+    text: "La sobre exigencia social, personal e infantil.",
   }
 ];
 </script>
