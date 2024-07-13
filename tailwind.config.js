@@ -19,6 +19,7 @@ module.exports = {
       paleBg: '#F5F1EB',
       grexiBrown: '#482E1D',
       grexiGreen: '#939974',
+      paleBlue:'#E2EBEF'
     },
     extend: {},
   },

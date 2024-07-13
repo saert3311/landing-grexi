@@ -23,7 +23,7 @@
         + cargos por procesamiento e impuesto
       </p>
       <a
-        href="https://grexialbornett.com/finalizar-compra/?add-to-cart=4741"
+        href="https://grexialbornett.com/finalizar-compra/?add-to-cart=5316"
         target="_blank"
         class="flex justify-center w-full py-3 mt-4"
       >
@@ -58,11 +58,11 @@ import checkIconSVG from "../global/svg/checkIconSVG.vue";
 const contenido = [
   "Acceso a la conferencia",
   "Acceso a la grabacion de la conferencia",
-  "Cuaderno de trabajo",
-  "Grupo exclusivo de acompañamiento",
+  "Ebook y audios",
+  "Sorpresas adicionales",
 ];
 
-const endPromoDate = ref(new Date('2024-05-25'));
+const endPromoDate = ref(new Date('2024-07-28'));
 
 const isEnded = computed(() => {
   return new Date() > endPromoDate.value;
