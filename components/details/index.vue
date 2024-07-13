@@ -24,7 +24,7 @@
           <h2
             class="text-3xl font-bold leading-tight text-brown sm:text-4xl lg:text-5xl"
           >
-            ¿Que voy a aprender con esta conferencia
+            ¿Que voy a aprender con esta conferencia?
           </h2>
           <p class="my-4 text-base leading-relaxed text-gray-600">
             En esta conferencia vas aprender a ser el padre que tus hijos necesitan que seas, conectando directamente con sus necesidades tantos emocionales, psicológicas y físicas. Permitiéndose a ambos tener una dinámica sana donde tanto el hijo como el padre puedan crecer conscientemente sanos en armonía, superando la sobre exigencia de la sociedad actual y tomando consciencia sobre lo que daña a tu hijo para no repetirlo.           </p>
