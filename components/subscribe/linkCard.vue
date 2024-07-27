@@ -23,14 +23,12 @@
         + cargos por procesamiento e impuesto
       </p>
       <a
-        href="https://grexialbornett.com/finalizar-compra/?add-to-cart=5316"
         target="_blank"
         class="flex justify-center w-full py-3 mt-4"
       >
         <button class="block bg-gold text-white px-6 py-3 rounded-lg z-20" disabled>
-          QUIERO MI ENTRADA
+          LAS INSCRIPCIONES HAN TERMINADO
         </button>
-        Las inscripciones han terminado
       </a>
     </div>
     <div class="px-6 pt-6 pb-8">
